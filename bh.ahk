@@ -1,6 +1,6 @@
-﻿*SPACE::
-Loop
-{
+﻿
+*SPACE::
+Loop {
 	GetKeyState,state,SPACE,P
 	if state = U
 		break
