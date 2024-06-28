@@ -4,7 +4,7 @@
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
-*$XButton2::
+*$XButton1::
     Toggle := !Toggle
 
     if (Toggle) {
@@ -17,7 +17,7 @@ SetWorkingDir, %A_ScriptDir%
         If (!Toggle) {
             Break
         }
-        Click Right
+        Click Left
         Sleep 200
     }
 Return

@@ -1,29 +1,19 @@
 
 #MaxThreadsPerHotkey 4
 
-Latency := 100
+Latency := 50
 
 
-*$LButton::
+*$q::
     Loop {
-        If (GetKeyState("LButton", "P")) {
-            Click
+        If (GetKeyState("q", "P")) {
+            Send q
         } Else {
             Break
         }
         Sleep Latency
     }
 Return
-
-
-; $RButton::
-;     Loop {
-;         if (GetKeyState("RButton", "P")) {
-;             Click Right
-;         }
-;         Sleep Latency
-;     }
-; return
 
 
 *F1::
